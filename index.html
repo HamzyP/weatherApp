@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Weather App</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!-- Include Tailwind CDN -->
+</head>
+
+<body class="bg-slate-950 font-sans flex justify-center items-center min-h-screen ">
+
+    <!-- Main container with rounded corners, shadow, and padding -->
+    <div class="bg-slate-900 p-8 rounded-xl shadow-lg w-full sm:max-w-md">
+        <!-- Title -->
+        <h1 class="text-4xl font-bold text-center text-slate-300 mb-4">UK Weather App</h1>
+
+        <!-- Input field for city name -->
+        <div class="mb-4">
+            
+        <select name="cities" id="cityInput" class="w-full px-4 py-2 border border-gray-300 rounded-lg bg-blue-100 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <option value="" disabled selected>Select your city</option>
+            <!-- UK Cities-->
+            <option value="aberdeen">Aberdeen</option>
+            <option value="armagh">Armagh</option>
+            <option value="2656396">Bangor (Northern Ireland)</option>
+            <option value="2656397">Bangor (Wales)</option>
+            <option value="belfast">Belfast</option>
+            <option value="birmingham">Birmingham</option>
+            <option value="bradford">Bradford</option>
+            <option value="brighton">Brighton &amp; Hove</option>
+            <option value="bristol">Bristol</option>
+            <option value="cambridge">Cambridge</option>
+            <option value="canterbury">Canterbury</option>
+            <option value="carlisle">Carlisle</option>
+            <option value="cardiff">Cardiff</option>
+            <option value="chelmsford">Chelmsford</option>
+            <option value="chester">Chester</option>
+            <option value="chichester">Chichester</option>
+            <option value="colchester">Colchester</option>
+            <option value="coventry">Coventry</option>
+            <option value="derby">Derby</option>
+            <option value="doncaster">Doncaster</option>
+            <option value="douglas">Douglas</option>
+            <option value="dundee">Dundee</option>
+            <option value="dunfermline">Dunfermline</option>
+            <option value="durham">Durham</option>
+            <option value="edinburgh">Edinburgh</option>
+            <option value="ely">Ely</option>
+            <option value="exeter">Exeter</option>
+            <option value="glasgow">Glasgow</option>
+            <option value="gloucester">Gloucester</option>
+            <option value="gibraltar">Gibraltar</option>
+            <option value="hamilton">Hamilton</option>
+            <option value="hereford">Hereford</option>
+            <option value="hull">Kingston-upon-Hull</option>
+            <option value="inverness">Inverness</option>
+            <option value="jamestown">Jamestown</option>
+            <option value="lancaster">Lancaster</option>
+            <option value="leeds">Leeds</option>
+            <option value="leicester">Leicester</option>
+            <option value="lichfield">Lichfield</option>
+            <option value="lincoln">Lincoln</option>
+            <option value="lisburn">Lisburn</option>
+            <option value="liverpool">Liverpool</option>
+            <option value="londonderry">Londonderry</option>
+            <option value="london">London</option>
+            <option value="manchester">Manchester</option>
+            <option value="3333173">Milton Keynes</option>
+            <option value="newcastle">Newcastle-upon-Tyne</option>
+            <option value="newport">Newport</option>
+            <option value="newry">Newry</option>
+            <option value="norwich">Norwich</option>
+            <option value="nottingham">Nottingham</option>
+            <option value="oxford">Oxford</option>
+            <option value="perth">Perth</option>
+            <option value="peterborough">Peterborough</option>
+            <option value="plymouth">Plymouth</option>
+            <option value="portsmouth">Portsmouth</option>
+            <option value="preston">Preston</option>
+            <option value="ripon">Ripon</option>
+            <option value="salford">Salford</option>
+            <option value="salisbury">Salisbury</option>
+            <option value="sheffield">Sheffield</option>
+            <option value="southampton">Southampton</option>
+            <option value="southend">Southend-on-Sea</option>
+            <option value="6615330">St Albans</option>
+            <option value="2638855">St Asaph</option>
+            <option value="2638822">St Davids</option>
+            <option value="stanley">Stanley</option>
+            <option value="stirling">Stirling</option>
+            <option value="stoke">Stoke on Trent</option>
+            <option value="sunderland">Sunderland</option>
+            <option value="swansea">Swansea</option>
+            <option value="truro">Truro</option>
+            <option value="wakefield">Wakefield</option>
+            <option value="wells">Wells</option>
+            <option value="westminster">Westminster</option>
+            <option value="winchester">Winchester</option>
+            <option value="wolverhampton">Wolverhampton</option>
+            <option value="worcester">Worcester</option>
+            <option value="wrexham">Wrexham</option>
+            <option value="york">York</option>
+          </select>
+        </div>
+        <!-- Weather info section -->
+        <div id="weather" class="text-center text-slate-300 mb-6">
+            <p class="text-xl" id="weather-status">Enter a city to get the weather.</p>
+        </div>
+
+        <!-- Button to fetch weather -->
+        <button id="getWeatherBtn"
+            class="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition ease-in-out duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400">
+            Get Weather
+        </button>
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
