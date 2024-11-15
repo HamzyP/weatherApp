@@ -6,9 +6,8 @@ A simple web application that allows users to check the current weather for citi
 
 ## Features
 
-- Search for the weather by city name or city ID.
-- Displays current temperature, "feels like" temperature, weather condition, visibility, sunrise, sunset and localtime.
-- Shows sunrise and sunset times.
+- Search for the weather using dropdown menu.
+- Displays current temperature, "feels like" temperature, weather condition, visibility, sunrise, sunset.
 - Displays the local time of the selected city.
 - Built with HTML, CSS (Tailwind CSS), and JavaScript.
 
